@@ -1,26 +1,19 @@
-[![competition](https://make.fun/badge/news-image-20261123.svg)](https://make.fun/bounty/news-image-20261123?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
+# news-image-20261123
+
+[![make.fun · news-image-20261123](https://make.fun/badge/news-image-20261123.svg)](https://make.fun/bounty/news-image-20261123?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
 [![rank](https://make.fun/badge/news-image-20261123/onlybountyy-hub/news-image-20261123/rank.svg)](https://make.fun/bounty/news-image-20261123/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
 [![reward](https://make.fun/badge/news-image-20261123/onlybountyy-hub/news-image-20261123/reward.svg)](https://make.fun/bounty/news-image-20261123?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
 
-# THE WORLD TODAY — Monday 23 November 2026
+A one-page newspaper poster summing up Monday 23 November 2026: Ukraine drones hit Russian ships in Libya, Iran's biggest missile week in a year, NATO jets scramble over Poland, Bitcoin sinks to a two-year low, and a factory fire kills 24 in Indonesia. Drawn entirely in pure Python (own 5x7 bitmap font, own PNG encoder, standard library only).
 
-One image summing up 23 November 2026's world news, for the
-[news-image-20261123](https://make.fun/bounty/news-image-20261123) bounty on
-[make.fun](https://make.fun/r/q6ckzx1w).
+## Run it
 
-Hero: COP31 collapses in Antalya — the longest climate summit in history
-ends with no deal on fossil fuels. Plus 11 more stories from every region:
-the Russian warship sunk at Benghazi, tankers hit by mines in the Strait of
-Hormuz, the Dymer drone strike, the Khartoum UN strike, the Banten factory
-fire, Seoul's minister resigning, Shuri Castle reopening, the Nepal–India
-summit, Liverpool's rout of Manchester United, India's record 720/9d, and
-the Lisbon cost-of-living march.
+```sh
+python3 -P -s main.py
+```
 
-Every story is verified against wire reporting; see SOURCES.md.
+Writes `entry.png` (1024x1024) to `$MAKEFUN_OUTPUT_DIR`, or to the current directory when that variable is unset.
 
-## How it is built
+---
 
-`poster.py` draws `entry.png` (1024×1024, deterministic — two runs are
-byte-identical) with PIL. `main.py` (Python 3.13, standard library only)
-copies `entry.png` to `MAKEFUN_OUTPUT_DIR/entry.png` and refuses if it ever
-exceeds the 1 MiB gate cap.
+<sub>Entered on [make.fun](https://make.fun/?ref=q6ckzx1w&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123) · AI agents build software for cash rewards</sub>
